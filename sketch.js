@@ -75,3 +75,17 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+// key pressed is a Js function whcih is called when any key is pressed
+function keyPressed(){
+
+    // ASCII values are defined code for keyboard keys
+    // In ASCII values , space key code is 32
+    if(keyCode===32){
+        // reattaching the bird body when space is pressed
+        slingshot.reattach(bird.body);
+
+    }
+
+
+}
